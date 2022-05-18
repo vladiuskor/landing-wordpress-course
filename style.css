@@ -58,6 +58,27 @@ h2.title {
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
+    position: relative;
+}
+
+.simple .title_big::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 300px;
+    top: 47px;
+    right: 0;
+    background-color: white;
+}
+
+.simple .title_big::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 300px;
+    top: 47px;
+    left: 0;
+    background-color: white;
 }
 
 .promo .promo_text {
@@ -203,8 +224,9 @@ h2.title {
 
 .optimization .optimization_img {
     position: absolute;
-    top: -48px;
-    left: -240px;
+    height: 614px;
+    left: -370px;
+    bottom: -107px;
     z-index: -1;
 }
 
